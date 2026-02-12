@@ -1,0 +1,7 @@
+{
+  "name": "Sangria Grand Hotel - Middeniya",
+  "description": "A luxury hotel and wedding destination website featuring the Royal Serenity aesthetic with deep charcoal, gold, and emerald accents.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
