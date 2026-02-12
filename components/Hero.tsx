@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import heroBg from '../src/images/happy-brides-2026-01-06-08-45-52-utc.jpg';
+import heroBg from '../src/images/hero-optimized.webp';
 
 const Hero: React.FC = () => {
   return (
@@ -18,6 +18,8 @@ const Hero: React.FC = () => {
             src={heroBg}
             className="w-full h-full object-cover opacity-90"
             alt="Happy Brides at Sangria Grand"
+            loading="eager"
+            {...{ fetchpriority: "high" }}
           />
         </motion.div>
         {/* Cinematic Gradient Overlay */}
