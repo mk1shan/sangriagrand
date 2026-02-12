@@ -1,4 +1,5 @@
 import React from 'react';
+import { Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -59,9 +60,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex gap-8">
-          <a href="#" className="hover:text-stone-400">Instagram</a>
-          <a href="#" className="hover:text-stone-400">Facebook</a>
-          <a href="#" className="hover:text-stone-400">Pinterest</a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100064087303389"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-stone-200 transition-colors flex items-center gap-2"
+          >
+            <Facebook size={16} strokeWidth={1.5} />
+            <span>Facebook</span>
+          </a>
         </div>
       </div>
     </footer>

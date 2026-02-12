@@ -50,12 +50,6 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
 
         {/* Right Side: Socials & CTA */}
         <div className="flex items-center space-x-8">
-          <div className="hidden md:flex items-center space-x-4">
-            {/* Simple social text placeholders */}
-            <a href="#" className={`text-[10px] tracking-widest transition-colors ${isScrolled || isOpen ? 'text-stone-500 hover:text-stone-900' : 'text-stone-300 hover:text-white'}`}>FB</a>
-            <a href="#" className={`text-[10px] tracking-widest transition-colors ${isScrolled || isOpen ? 'text-stone-500 hover:text-stone-900' : 'text-stone-300 hover:text-white'}`}>IG</a>
-            <a href="#" className={`text-[10px] tracking-widest transition-colors ${isScrolled || isOpen ? 'text-stone-500 hover:text-stone-900' : 'text-stone-300 hover:text-white'}`}>TT</a>
-          </div>
           <a
             href="#contact"
             className={`hidden sm:block px-6 py-2 border text-[10px] uppercase tracking-[0.2em] transition-all font-medium ${isScrolled || isOpen ? 'border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white' : 'border-stone-200 text-stone-200 hover:bg-stone-200 hover:text-stone-900'}`}
@@ -114,16 +108,6 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 </a>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="flex items-center space-x-8 pt-12"
-              >
-                <a href="#" className="text-stone-400 hover:text-stone-900 transition-colors uppercase text-[10px] tracking-widest font-semibold">FB</a>
-                <a href="#" className="text-stone-400 hover:text-stone-900 transition-colors uppercase text-[10px] tracking-widest font-semibold">IG</a>
-                <a href="#" className="text-stone-400 hover:text-stone-900 transition-colors uppercase text-[10px] tracking-widest font-semibold">TT</a>
-              </motion.div>
             </div>
 
             <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
